@@ -1,5 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  //primera clase 5-agosto-2019
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -10,8 +11,12 @@
   <input type="text" placeholder="Nombre" [(ngModel)]="Nombre"/>
   <br/> 
   Nombre:{{Nombre}}
-
-<h1> 
+</div>
+<br>
+<br>
+<div style="text-align:center">
+//tarea hacer calculadora 
+  <h1> 
    Calculadora 
   </h1>
   <hr>
@@ -30,8 +35,13 @@
   <button (click)="operacion(num1,num2,'modulo')">MODULO</button>
   <br>
   <button (click)="reset()">LIMPIAR</button>
-
-  <h1> Calculadora </h1>  
+</div>
+<br>
+<br>
+<div style="text-align:center">
+  <h1> 
+    Calculadora 
+  </h1>  
     <input type="number" class="form-control" placeholder="Ingrese Valor 1" id="val1" [(ngModel)]="val1">
 <input type="number" class="form-control" placeholder="Ingrese Valor 2" id="val2" [(ngModel)]="val2"> 
 
@@ -57,9 +67,11 @@ El resultado del modulo es ={{mod}}
 
 
 </div>  
+<br>
+<br>
 
-
-<div>
+<div style="text-align:center">
+  //clase 21-agosto-2019
   <h1> Paises </h1> 
  <ul>
   <ng-container *ngFor="let pais of paises"> 
@@ -71,8 +83,10 @@ El resultado del modulo es ={{mod}}
         <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker> 
       </agm-map>
  </div>
- </div>
-<div>
+ </div>}
+ 
+<div style="text-align:center">
+    // clase 26-agosto-2019
   <ul>
     <ng-container *ngFor="let pais of paises">
       <li [ngStyle]="{color:(pais.activo) ? 'black' : 'gray'}">{{pais.nombre}}</li>
@@ -82,7 +96,7 @@ El resultado del modulo es ={{mod}}
 </div>
 <br>
 <br>
-<div>
+<div style="text-align:center">
   <ul>
     <ng-container *ngFor="let pais of paises; let i = index">
       <li [ngStyle]="{color:(pais.activo) ? 'black' : 'gray'}"
@@ -93,7 +107,7 @@ El resultado del modulo es ={{mod}}
 </div>
 <br>
 <br>
-<div>
+<div style="text-align:center">
   <ul>
     <ng-container *ngFor="let pais of paises; let i = index"[ngSwitch]="pais.cercano">
       <li [ngStyle]="{color:(pais.activo) ? 'black' : 'gray'}"
