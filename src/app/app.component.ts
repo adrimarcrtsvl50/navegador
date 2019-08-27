@@ -17,7 +17,13 @@ export class AppComponent {
   {activo: false, nombre:"Argentina"},
   {activo: true, nombre:"Polonia"},
   {activo: false, nombre:"Alemania"},
-  {activo: true, nombre:"Francia"}
+  {activo: true, nombre:"Francia"},
+  {cercano: 1, nombre:"Colombia"},
+  {cercano: 1, nombre:"Brasil"},
+  {cercano: 2, nombre:"Argentina"},
+  {cercano: 3, nombre:"Polonia"},
+  {cercano: 3, nombre:"Alemania"},
+  {cercano: 3, nombre:"Francia"}
   ]
   lat:number = 51.778418;
   lng:number = 7.809007;
